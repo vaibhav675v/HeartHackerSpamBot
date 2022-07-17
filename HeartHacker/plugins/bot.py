@@ -12,10 +12,10 @@ from telethon.tl.custom import button
 from time import time
 from datetime import datetime
 
-RIZ_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5ef512.jpg"
+RIZ_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/5868b884b523d96b2812b.jpg"
   
 
-rizoel = "✯ 𝙃𝙚𝙖𝙧𝙩𝙃𝙖𝙘𝙠𝙚𝙧 𝙎𝙥𝙖𝙢 𝙃𝙚𝙧𝙚 ✯\n\n"
+rizoel = "✯ 𝗗𝗲𝗗𝘀𝗲𝗖 𝗫 𝗦𝗽𝗮𝗺 ✯\n\n"
 rizoel += f"═══════════════════\n"
 rizoel += f"• **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.9.6`\n"
 rizoel += f"• **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
@@ -30,11 +30,11 @@ async def alive(event):
                                   caption=rizoel,
                                   buttons=[
         [
-        Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/YamlokOfficial"),
-        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/LHTHALxFIGHTERS")
+        Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/DESTROY_IN_SECOND"),
+        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/DESTROY_IN_SECOND")
         ],
         [
-        Button.url("• ʀᴇᴘᴏ •", "https://github.com/AT-WORLDS-END/HeartHackerSpamBot")
+        Button.url("• ʀᴇᴘᴏ •", "https://github.com/vaibhav6192")
         ]
         ]
         )
@@ -83,7 +83,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"𝐏𝐎𝐍𝐆\n\nϟ 𝙃𝙚𝙖𝙧𝙩 𝙃𝙖𝙘𝙠𝙚𝙧 𝙎𝙥𝙖𝙢 𝘽𝙤𝙩 ϟ︎ `{ms}` ᴍs")
+        await event.edit(f"𝐏𝐎𝐍𝐆\n\nϟ 𝗗𝗲𝗗𝘀𝗲𝗖 𝗫 𝗦𝗽𝗮𝗺 ϟ︎ `{ms}` ᴍs")
         
         
 
@@ -99,7 +99,7 @@ async def ping(e):
 @Riz10.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        text = "**Restarting Your 𝙃𝙚𝙖𝙧𝙩 𝙃𝙖𝙘𝙠𝙚𝙧 𝙎𝙥𝙖𝙢 𝘽𝙤𝙩**.. Please Wait Until It Starts Again"
+        text = "**Restarting Your 𝗗𝗲𝗗𝘀𝗲𝗖 𝗫 𝗦𝗽𝗮𝗺 𝘽𝙤𝙩**.. Please Wait Until It Starts Again"
         await e.reply(text, parse_mode=None, link_preview=None)
         try:
             await Riz.disconnect()
